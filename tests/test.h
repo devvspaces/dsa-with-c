@@ -35,6 +35,7 @@ typedef struct test
 
 /* Test functions */
 int test_linear_search(void);
+int test_binary_search(void);
 
 /**
  * struct test_case - test case struct

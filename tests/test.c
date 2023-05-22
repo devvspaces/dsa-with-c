@@ -36,7 +36,8 @@ int main(int ac, char **av)
 {
 	int idx;
 	test_t tests[] = {
-		{"test_linear_search", test_linear_search},
+		{"linear_search", test_linear_search},
+		{"binary_search", test_binary_search},
 	};
 
 	if (ac > 2)
