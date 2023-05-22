@@ -40,7 +40,7 @@ Implementing Data structures and algorithms in C programming language
 
 - [ ] [Searching](algorithms/searching/README.md)
   - [x] Linear Search
-  - [ ] Binary Search
+  - [x] Binary Search
   - [ ] Ternary Search
   - [ ] Jump Search
   - [ ] Interpolation Search
