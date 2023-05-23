@@ -38,13 +38,13 @@ Implementing Data structures and algorithms in C programming language
   - [ ] Radix Sort
   - [ ] Bucket Sort
 
-- [ ] [Searching](algorithms/searching/README.md)
+- [x] [Searching](algorithms/searching/README.md)
   - [x] Linear Search
   - [x] Binary Search
-  - [ ] Ternary Search
-  - [ ] Jump Search
-  - [ ] Interpolation Search
-  - [ ] Exponential Search
+  - [x] Ternary Search
+  - [x] Jump Search
+  - [x] Interpolation Search
+  - [x] Exponential Search
 
 - [ ] Graphs
   - [ ] Breadth First Search
