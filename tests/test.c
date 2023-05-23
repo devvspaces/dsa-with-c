@@ -1,4 +1,5 @@
 #include "test.h"
+#include "test_algorithms/test_searching/main.h"
 
 /**
  * match - Check if a string matches a pattern
@@ -38,6 +39,10 @@ int main(int ac, char **av)
 	test_t tests[] = {
 		{"linear_search", test_linear_search},
 		{"binary_search", test_binary_search},
+		{"jump_search", test_jump_search},
+		{"exponential_search", test_exponential_search},
+		{"interpolation_search", test_interpolation_search},
+		{"ternary_search", test_ternary_search},
 	};
 
 	if (ac > 2)

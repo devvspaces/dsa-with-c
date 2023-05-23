@@ -1,6 +1,10 @@
 {
     "files.associations": {
-        "dsa.h": "c",
-        "stdio.h": "c"
-    }
+		"dsa.h": "c",
+		"stdio.h": "c",
+		"searching.h": "c",
+		"math.h": "c"
+	},
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false
 }

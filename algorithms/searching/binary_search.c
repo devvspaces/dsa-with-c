@@ -5,7 +5,7 @@
  * @arr: array to search
  * @size: size of the arrary
  * @key: value to search for in the array
- * 
+ *
  * Return: index of key if found else -1
  */
 int binary_search(int *arr, int size, int key)
@@ -29,4 +29,3 @@ int binary_search(int *arr, int size, int key)
 
 	return (-1);
 }
-

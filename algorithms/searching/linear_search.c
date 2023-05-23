@@ -1,4 +1,27 @@
 
+/**
+ * search_array - search an array using two pointers
+ *
+ * Description: Searches an arrary from point start
+ * to point end, looking for needle.
+ *
+ * @arr: array to search
+ * @needle: value to search for
+ * @start: start pointer
+ * @end: end pointer
+ *
+ * Return: index of the needle if found else -1
+ */
+int search_array(int *arr, int needle, int start, int end)
+{
+	while (start <= end)
+	{
+		if (arr[start] == needle)
+			return (start);
+		start++;
+	}
+	return (-1);
+}
 
 /**
  * linear_search - searching an array linearly
@@ -11,15 +34,5 @@
  */
 int linear_search(int *array, int size, int value)
 {
-	int idx;
-
-	for (idx = 0; idx < size; idx++)
-	{
-		if (array[idx] == value)
-		{
-			return (idx);
-		}
-	}
-
-	return (-1);
+	return (search_array(array, value, 0, size - 1));
 }

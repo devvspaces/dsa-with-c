@@ -1,12 +1,13 @@
-#include "../algorithms/searching/searching.h"
-#include "test.h"
+
+#include "../../../algorithms/searching/searching.h"
+#include "main.h"
 
 /**
- * test_linear_search - Test linear_search function
+ * test_exponential_search - Test jump search algorithm
  *
  * Return: 0 on success, -1 on failure
  */
-int test_linear_search(void)
+int test_exponential_search(void)
 {
 	int i, actual;
 	int array[] = {1, 2, 3, 4, 5};
@@ -23,12 +24,9 @@ int test_linear_search(void)
 
 	for (i = 0; (size_t)i < sizeof(cases) / sizeof(cases[0]); i++)
 	{
-		actual = linear_search(array, size, cases[i].value);
+		actual = exponential_search(array, size, cases[i].value);
 		if (actual != cases[i].expected)
-		{
 			return (-1);
-		}
 	}
-
 	return (0);
 }

@@ -1,6 +1,12 @@
-#include "../algorithms/searching/searching.h"
-#include "test.h"
 
+#include "../../../algorithms/searching/searching.h"
+#include "main.h"
+
+/**
+ * test_binary_search - Test jump search algorithm
+ *
+ * Return: 0 on success, -1 on failure
+ */
 int test_binary_search(void)
 {
 	int i, actual;
@@ -22,6 +28,5 @@ int test_binary_search(void)
 		if (actual != cases[i].expected)
 			return (-1);
 	}
-
 	return (0);
 }

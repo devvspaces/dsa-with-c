@@ -33,20 +33,4 @@ typedef struct test
 	int (*func)(void);
 } test_t;
 
-/* Test functions */
-int test_linear_search(void);
-int test_binary_search(void);
-
-/**
- * struct test_case - test case struct
- *
- * @value: value to test for
- * @expected: index to expect
- */
-typedef struct test_case
-{
-	int value;
-	int expected;
-} test_case_t;
-
 #endif

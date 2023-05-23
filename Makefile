@@ -2,12 +2,12 @@
 
 CC=gcc -Wall -Werror -Wextra -pedantic -std=gnu89
 TARGET=dsa
-CFILES=*/*.c */*/*.c
-HFILES=*/*.h */*/*.h
+CFILES=*/*.c */*/*.c */*/*/*.c
+HFILES=*/*.h */*/*.h */*/*/*.h
 
 test:
 	betty $(CFILES) $(HFILES)
-	$(CC) $(CFILES) -o $(TARGET)
+	$(CC) $(CFILES) -o $(TARGET) -lm
 
 clean:
 	rm -f $(TARGET)
