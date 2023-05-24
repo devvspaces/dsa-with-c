@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * test_interpolation_search - Test jump search algorithm
+ * test_interpolation_search - Test interpolation search algorithm
  *
  * Return: 0 on success, -1 on failure
  */

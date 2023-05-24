@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * test_exponential_search - Test jump search algorithm
+ * test_exponential_search - Test exponential search algorithm
  *
  * Return: 0 on success, -1 on failure
  */

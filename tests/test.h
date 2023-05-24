@@ -21,6 +21,8 @@
 /* Regex match function */
 int match(const char *string, const char *pattern);
 
+int array_equals(int *a, int *b, int size);
+
 /**
  * struct test - storing test data
  *

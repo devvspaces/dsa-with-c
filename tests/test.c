@@ -1,5 +1,6 @@
 #include "test.h"
 #include "test_algorithms/test_searching/main.h"
+#include "test_algorithms/test_sorting/main.h"
 
 /**
  * match - Check if a string matches a pattern
@@ -25,7 +26,28 @@ int match(const char *string, const char *pattern)
 }
 
 /**
+ * array_equals - checks if an array a
+ * is equal to b
+ *
+ * @a: first array
+ * @b: second array
+ * @size: size of an array
+ *
+ * Return: 0 if equal else 1
+ */
+int array_equals(int *a, int *b, int size)
+{
+	int idx;
+
+	for (idx = 0; idx < size; idx++)
+		if (a[idx] != b[idx])
+			return (1);
+	return (0);
+}
+
+/**
  * main - Entry point
+ *
  * @ac: Arguments count
  * @av: Arguments vector
  *
@@ -43,6 +65,7 @@ int main(int ac, char **av)
 		{"exponential_search", test_exponential_search},
 		{"interpolation_search", test_interpolation_search},
 		{"ternary_search", test_ternary_search},
+		{"bubble_sort", test_bubble_sort},
 	};
 
 	if (ac > 2)

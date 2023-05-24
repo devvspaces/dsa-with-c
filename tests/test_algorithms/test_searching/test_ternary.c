@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * test_ternary_search - Test jump search algorithm
+ * test_ternary_search - Test ternary search algorithm
  *
  * Return: 0 on success, -1 on failure
  */

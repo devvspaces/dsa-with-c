@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * test_binary_search - Test jump search algorithm
+ * test_binary_search - Test binary search algorithm
  *
  * Return: 0 on success, -1 on failure
  */

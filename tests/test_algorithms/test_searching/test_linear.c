@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * test_linear_search - Test linear_search function
+ * test_linear_search - Test linear function
  *
  * Return: 0 on success, -1 on failure
  */

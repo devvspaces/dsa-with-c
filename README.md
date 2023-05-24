@@ -27,8 +27,8 @@ Implementing Data structures and algorithms in C programming language
 
 ## Algorithms
 
-- [ ] Sorting
-  - [ ] Bubble Sort
+- [ ] [Sorting](algorithms/sorting/README.md)
+  - [x] Bubble Sort
   - [ ] Selection Sort
   - [ ] Insertion Sort
   - [ ] Merge Sort
