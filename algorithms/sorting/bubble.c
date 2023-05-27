@@ -1,5 +1,11 @@
 #include "sorting.h"
 
+/**
+ * print_arr - print array
+ *
+ * @arr: array to sort
+ * @size: size of array
+ */
 void print_arr(int *arr, int size)
 {
 	int idx = 0;
@@ -8,7 +14,6 @@ void print_arr(int *arr, int size)
 		printf("%d, ", arr[idx]);
 	printf("\n");
 }
-
 
 /**
  * bubble_sort - sorts an array using bubble sort

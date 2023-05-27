@@ -2,6 +2,15 @@
 
 Implementing Data structures and algorithms in C programming language
 
+## Testing
+
+To test the code, run the following commands:
+
+```bash
+make test
+./dsa
+```
+
 ## Data Structures
 
 - [ ] Stack
@@ -29,9 +38,9 @@ Implementing Data structures and algorithms in C programming language
 
 - [ ] [Sorting](algorithms/sorting/README.md)
   - [x] Bubble Sort
-  - [ ] Selection Sort
-  - [ ] Insertion Sort
-  - [ ] Merge Sort
+  - [x] Selection Sort
+  - [x] Insertion Sort
+  - [x] Merge Sort
   - [ ] Quick Sort
   - [ ] Heap Sort
   - [ ] Counting Sort

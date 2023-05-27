@@ -5,6 +5,9 @@
 
 /* Test functions */
 int test_bubble_sort(void);
+int test_selection_sort(void);
+int test_insertion_sort(void);
+int test_merge_sort(void);
 
 /**
  * struct sort_test_case - test case struct

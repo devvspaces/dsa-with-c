@@ -66,6 +66,9 @@ int main(int ac, char **av)
 		{"interpolation_search", test_interpolation_search},
 		{"ternary_search", test_ternary_search},
 		{"bubble_sort", test_bubble_sort},
+		{"selection_sort", test_selection_sort},
+		{"insertion_sort", test_insertion_sort},
+		{"merge_sort", test_merge_sort},
 	};
 
 	if (ac > 2)
