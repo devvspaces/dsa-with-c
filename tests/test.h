@@ -4,6 +4,8 @@
 #include <regex.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdarg.h>
+#include <stdlib.h>
 
 #define TESTS_COUNT (sizeof(tests) / sizeof(tests[0]))
 

@@ -7,8 +7,14 @@ Implementing Data structures and algorithms in C programming language
 To test the code, run the following commands:
 
 ```bash
-make test
+# Compile
+make build
+
+# Run tests
 ./dsa
+
+# Clean up
+make clean
 ```
 
 ## Data Structures
@@ -41,7 +47,7 @@ make test
   - [x] Selection Sort
   - [x] Insertion Sort
   - [x] Merge Sort
-  - [ ] Quick Sort
+  - [x] Quick Sort
   - [ ] Heap Sort
   - [ ] Counting Sort
   - [ ] Radix Sort

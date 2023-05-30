@@ -9,24 +9,18 @@
  */
 int test_insertion_sort(void)
 {
-	int i, size = 11;
+	int i;
+	sort_case_t *cases;
 
-	int arr[] = {1, 4, 1, 2, 7, 9, 7, 3, 1, 5, 6};
-	int sorted[] = {1, 1, 1, 2, 3, 4, 5, 6, 7, 7, 9};
-	sort_test_case_t cases[2];
-	sort_test_case_t case1;
-	sort_test_case_t case2 = {NULL, NULL};
-
-	case1.arr = arr;
-	case1.sorted = sorted;
-	cases[0] = case1;
-	cases[1] = case2;
+	cases = create_test_cases();
 
 	for (i = 0; cases[i].arr != NULL; i++)
 	{
-		insertion_sort(cases[i].arr, size);
-		if (array_equals(cases[i].arr, cases[i].sorted, size) == 1)
-			return (-1);
+		insertion_sort(cases[i].arr, cases[i].size);
+		if (array_equals(cases[i].arr, cases[i].sorted, cases[i].size) == 1)
+			return (free_cases(cases), -1);
 	}
+
+	free_cases(cases);
 	return (0);
 }

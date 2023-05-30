@@ -69,6 +69,7 @@ int main(int ac, char **av)
 		{"selection_sort", test_selection_sort},
 		{"insertion_sort", test_insertion_sort},
 		{"merge_sort", test_merge_sort},
+		{"quick_sort", test_quick_sort},
 	};
 
 	if (ac > 2)
