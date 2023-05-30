@@ -8,6 +8,9 @@ HFILES=*/*.h */*/*.h */*/*/*.h
 build:
 	$(CC) $(CFILES) -o $(TARGET) -lm -g
 
+check:
+	./$(TARGET)
+
 test:
 	betty $(CFILES) $(HFILES)
 	$(CC) $(CFILES) -o $(TARGET) -lm -g
