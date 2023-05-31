@@ -11,7 +11,7 @@ int test_interpolation_search(void)
 {
 	int i, actual;
 	int array[] = {1, 2, 3, 4, 5};
-	int size = sizeof(array) / sizeof(array[0]);
+	int size = 5;
 
 	test_case_t cases[] = {
 		{1, 0},
@@ -22,7 +22,7 @@ int test_interpolation_search(void)
 		{6, -1},
 	};
 
-	for (i = 0; (size_t)i < sizeof(cases) / sizeof(cases[0]); i++)
+	for (i = 0; i < size; i++)
 	{
 		actual = interpolation_search(array, size, cases[i].value);
 		if (actual != cases[i].expected)
