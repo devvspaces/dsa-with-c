@@ -19,7 +19,7 @@ make clean
 
 ## Data Structures
 
-- [ ] Stack
+- [x] Stack
 - [ ] Queue
 - [ ] Linked List
 - [ ] Binary Tree
