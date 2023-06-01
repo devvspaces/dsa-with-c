@@ -21,6 +21,8 @@ make clean
 
 - [x] Stack
 - [ ] Queue
+  - [ ] Circular Array Queue
+  - [x] Linked List Queue
 - [ ] Linked List
 - [ ] Binary Tree
 - [ ] Binary Search Tree

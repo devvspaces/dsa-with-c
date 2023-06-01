@@ -11,9 +11,11 @@ build:
 check:
 	./$(TARGET)
 
+clean:
+	rm -f $(TARGET)
+
 test:
 	betty $(CFILES) $(HFILES)
 	$(CC) $(CFILES) -o $(TARGET) -lm -g
-
-clean:
-	rm -f $(TARGET)
+	make check
+	make clean

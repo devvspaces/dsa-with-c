@@ -16,11 +16,10 @@ A stack is a linear data structure that stores items in a Last-In/First-Out (LIF
 
 A queue is a linear data structure that stores items in a First In First Out (FIFO) manner. With a queue the least recently added item is removed first. A good example of queue is any queue of consumers for a resource where the consumer that came first is served first.
 
-- `enqueue()` - Insert an element at the rear of the queue
-- `dequeue()` - Remove an element from the front of the queue
-- `peek()` - Get the value of the front of the queue without removing it
-- `isEmpty()` - Check if the queue is empty
-- `isFull()` - Check if the queue is full
+- `enqueue()` - Insert an element at the rear of the queue. Time complexity: O(1)
+- `dequeue()` - Remove an element from the front of the queue. Time complexity: O(1)
+- `peek()` - Get the value of the front of the queue without removing it. Time complexity: O(1)
+- `isEmpty()` - Check if the queue is empty. Time complexity: O(1)
 
 ## Linked List
 
