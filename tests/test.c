@@ -3,6 +3,7 @@
 #include "test_algorithms/test_sorting/main.h"
 #include "test_data_structures/test_stack/main.h"
 #include "test_data_structures/test_queue/main.h"
+#include "test_data_structures/test_linked_list/main.h"
 
 /**
  * match - Check if a string matches a pattern
@@ -74,6 +75,7 @@ int main(int ac, char **av)
 		{"quick_sort", test_quick_sort},
 		{"ds_stack", test_stack},
 		{"ds_queue_linked", test_queue_linked_list},
+		{"linked_list", test_linked_list},
 	};
 
 	if (ac > 2)

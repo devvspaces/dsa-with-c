@@ -18,4 +18,3 @@ test:
 	betty $(CFILES) $(HFILES)
 	$(CC) $(CFILES) -o $(TARGET) -lm -g
 	make check
-	make clean

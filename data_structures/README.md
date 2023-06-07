@@ -27,10 +27,8 @@ A linked list is a linear data structure, in which the elements are not stored a
 
 - `insertAtBeginning()` - Insert an element at the beginning of the linked list
 - `insertAtEnd()` - Insert an element at the end of the linked list
-- `insertAtPosition()` - Insert an element at a given position in the linked list
 - `deleteFromBeginning()` - Delete an element from the beginning of the linked list
 - `deleteFromEnd()` - Delete an element from the end of the linked list
-- `deleteFromPosition()` - Delete an element from a given position in the linked list
 - `display()` - Display the linked list
 
 ## Doubly Linked List
