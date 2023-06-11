@@ -23,10 +23,9 @@ make clean
 - [x] Queue
   - [x] Circular Array Queue
   - [x] Linked List Queue
-- [ ] Linked List
+- [x] Linked List
   - [x] Singly Linked List
-  - [ ] Doubly Linked List
-  - [ ] Circular Linked List
+  - [x] Doubly Linked List
 - [ ] Binary Tree
 - [ ] Binary Search Tree
 - [ ] Heap
