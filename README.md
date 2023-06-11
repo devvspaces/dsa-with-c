@@ -20,8 +20,8 @@ make clean
 ## Data Structures
 
 - [x] Stack
-- [ ] Queue
-  - [ ] Circular Array Queue
+- [x] Queue
+  - [x] Circular Array Queue
   - [x] Linked List Queue
 - [ ] Linked List
   - [x] Singly Linked List
