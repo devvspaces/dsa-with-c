@@ -5,6 +5,7 @@
 #include "test_data_structures/test_queue/main.h"
 #include "test_data_structures/test_circular_queue/main.h"
 #include "test_data_structures/test_linked_list/main.h"
+#include "test_data_structures/test_double_linked_list/main.h"
 
 /**
  * match - Check if a string matches a pattern
@@ -78,6 +79,7 @@ int main(int ac, char **av)
 		{"ds_queue_linked", test_queue_linked_list},
 		{"linked_list", test_linked_list},
 		{"ds_queue_circular", test_queue_circular},
+		{"double_linked_list", test_double_linked_list},
 	};
 
 	if (ac > 2)

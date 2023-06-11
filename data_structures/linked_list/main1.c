@@ -16,10 +16,10 @@ void print_linked_list(link_t *link)
 	temp = link;
 	while (temp->next != NULL)
 	{
-		printf("%d ->", temp->val);
+		printf("%d -> ", temp->val);
 		temp = temp->next;
 	}
-	printf("%d ->", temp->val);
+	printf("%d\n", temp->val);
 }
 
 /**
