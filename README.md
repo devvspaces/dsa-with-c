@@ -2,20 +2,9 @@
 
 Implementing Data structures and algorithms in C programming language
 
-## Testing
+## Visualize DSA
 
-To test the code, run the following commands:
-
-```bash
-# Compile
-make build
-
-# Run tests
-./dsa
-
-# Clean up
-make clean
-```
+Visit [Visualize DSA](https://visualgo.net/en) to visualize the data structures and algorithms.
 
 ## Data Structures
 
@@ -112,11 +101,17 @@ make clean
 
 ## Testing
 
-Build and run tests with:
+To test the code, run the following commands:
 
 ```bash
-make test
+# Compile
+make build
+
+# Run tests
 ./dsa
+
+# Clean up
+make clean
 ```
 
 ### Usage
