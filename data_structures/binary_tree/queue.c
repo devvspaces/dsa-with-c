@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * free_queue - free a queue
+ * free_pqueue - free a queue
  *
  * @queue: queue
  */
-void free_queue(queue_t *queue)
+void free_pqueue(pqueue_t *queue)
 {
-	qitem *prev, *temp;
+	pq_item *prev, *temp;
 
 	prev = queue->head;
 	while (prev != NULL)
@@ -20,22 +20,7 @@ void free_queue(queue_t *queue)
 }
 
 /**
- * isQueueEmpty - checks if a queue is
- * empty
- *
- * @queue: queue structure
- *
- * Return: 0 if empty else 1
- */
-int isQueueEmpty(queue_t *queue)
-{
-	if (queue->head == NULL)
-		return (0);
-	return (1);
-}
-
-/**
- * enqueue - adds a value to the end
+ * p_enqueue - adds a value to the end
  * of the queue
  *
  * @queue: queue structure
@@ -43,9 +28,9 @@ int isQueueEmpty(queue_t *queue)
  *
  * Return: 0 if successfull else 1
  */
-int enqueue(queue_t *queue, int val)
+int p_enqueue(pqueue_t *queue, bt_node *val)
 {
-	qitem *new = malloc(sizeof(qitem));
+	pq_item *new = malloc(sizeof(pq_item));
 
 	if (new == NULL)
 		return (free(new), 1);
@@ -67,7 +52,7 @@ int enqueue(queue_t *queue, int val)
 }
 
 /**
- * dequeue - removes a value from
+ * p_dequeue - removes a value from
  * the start of a queue
  *
  * @queue: queue structure
@@ -75,9 +60,9 @@ int enqueue(queue_t *queue, int val)
  *
  * Return: 0 if successfull else 1
  */
-int dequeue(queue_t *queue, int *val)
+int p_dequeue(pqueue_t *queue, bt_node **val)
 {
-	qitem *temp;
+	pq_item *temp;
 
 	if (queue->head == NULL)
 		return (1);
@@ -85,23 +70,26 @@ int dequeue(queue_t *queue, int *val)
 	*val = queue->head->val;
 	temp = queue->head;
 	queue->head = queue->head->next;
+	if (temp == queue->tail)
+		queue->tail = NULL;
 	free(temp);
 	return (0);
 }
 
 /**
- * peekQueue - peeks at the value at
- * the start of a queue
+ * create_pqueue - create a queue
  *
- * @queue: queue structure
- * @val: stores value peeked
- *
- * Return: 0 if successfull else 1
+ * Return: pointer to a new queue or NULL
  */
-int peekQueue(queue_t *queue, int *val)
+pqueue_t *create_pqueue(void)
 {
-	if (queue->head == NULL)
-		return (1);
-	*val = queue->head->val;
-	return (0);
+	pqueue_t *qcase;
+
+	qcase = malloc(sizeof(pqueue_t));
+	if (qcase == NULL)
+		return (free(qcase), NULL);
+
+	qcase->head = NULL;
+	qcase->tail = NULL;
+	return (qcase);
 }

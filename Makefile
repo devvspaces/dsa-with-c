@@ -11,10 +11,16 @@ build:
 check:
 	./$(TARGET)
 
+valgrind:
+	valgrind --leak-check=full --track-origins=yes ./$(TARGET)
+
 clean:
 	rm -f $(TARGET)
 
-test:
+betty:
 	betty $(CFILES) $(HFILES)
-	$(CC) $(CFILES) -o $(TARGET) -lm -g
+
+test:
+	make betty
+	make build
 	make check

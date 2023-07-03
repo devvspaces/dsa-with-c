@@ -5,11 +5,12 @@
 #include <stdio.h>
 
 /**
- * struct link - linkedlist data
+ * struct double_linked_list - linkedlist data
  * structure
  *
  * @val: value
  * @next: pointer to the next
+ * @prev: pointer to the prev
  */
 typedef struct double_linked_list
 {

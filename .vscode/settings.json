@@ -1,9 +1,11 @@
 {
     "files.associations": {
+		"*.h": "c",
 		"dsa.h": "c",
 		"stdio.h": "c",
 		"searching.h": "c",
-		"math.h": "c"
+		"math.h": "c",
+		"random": "c"
 	},
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false

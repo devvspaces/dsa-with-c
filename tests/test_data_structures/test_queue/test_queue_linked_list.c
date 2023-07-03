@@ -3,25 +3,6 @@
 #include "main.h"
 
 /**
- * free_queue - free a queue
- *
- * @queue: queue
- */
-void free_queue(queue_t *queue)
-{
-	qitem *prev, *temp;
-
-	prev = queue->head;
-	while (prev != NULL)
-	{
-		temp = prev->next;
-		free(prev);
-		prev = temp;
-	}
-	free(queue);
-}
-
-/**
  * test_queue_linked_list - Test queue data
  * structure implemented using a linked list
  *
@@ -32,10 +13,9 @@ int test_queue_linked_list(void)
 	queue_t *qcase;
 	int computed, error;
 
-	qcase = malloc(sizeof(queue_t));
+	qcase = create_queue();
 	if (qcase == NULL)
-		return (free(qcase), -1);
-	qcase->head = NULL, qcase->tail = NULL;
+		return (-1);
 
 	error = isQueueEmpty(qcase);
 	if (error != 0)

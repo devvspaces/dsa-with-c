@@ -29,6 +29,8 @@ typedef struct queue
 	qitem *tail;
 } queue_t;
 
+queue_t *create_queue(void);
+void free_queue(queue_t *queue);
 int isQueueEmpty(queue_t *queue);
 int enqueue(queue_t *queue, int val);
 int dequeue(queue_t *queue, int *val);

@@ -14,12 +14,13 @@ void c_free_queue(c_queue_t *qcase)
 }
 
 /**
- * test_queue_circular - Test queue data
- * structure implemented using a circular array
+ * test_queue_creation - Test queue creation
+ *
+ * @cqt: pointer to circular queue
  *
  * Return: 0 on success, -1 on failure
  */
-int test_queue_circular(void)
+int test_queue_creation(c_queue_t **cqt)
 {
 	c_queue_t *qcase;
 	int computed, error;
@@ -30,6 +31,7 @@ int test_queue_circular(void)
 	qcase->data = calloc(5, sizeof(int));
 	if (qcase->data == NULL)
 		return (c_free_queue(qcase), -1);
+
 	qcase->len = 5, qcase->front = 0, qcase->rear = 0;
 
 	error = cIsQueueEmpty(qcase);
@@ -47,6 +49,26 @@ int test_queue_circular(void)
 	error = cDequeue(qcase, &computed);
 	if (error == 0)
 		return (c_free_queue(qcase), -1);
+
+	*cqt = qcase;
+	return (0);
+}
+
+/**
+ * test_queue_circular - Test queue data
+ * structure implemented using a circular array
+ *
+ * Return: 0 on success, -1 on failure
+ */
+int test_queue_circular(void)
+{
+	c_queue_t *qcase;
+	int computed, error;
+
+	error = test_queue_creation(&qcase);
+	if (error != 0)
+		return (-1);
+	
 	error = cEnqueue(qcase, 5);
 	if (error != 0)
 		return (c_free_queue(qcase), -1);

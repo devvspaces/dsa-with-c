@@ -15,7 +15,13 @@ Visit [Visualize DSA](https://visualgo.net/en) to visualize the data structures 
 - [x] Linked List
   - [x] Singly Linked List
   - [x] Doubly Linked List
-- [ ] Binary Tree
+- [x] Binary Tree
+  - [x] Creating
+  - [x] Traversing
+    - [x] Preorder
+    - [x] Inorder
+    - [x] Postorder
+    - [x] Levelorder
 - [ ] Binary Search Tree
 - [ ] Heap
 - [ ] Hashing

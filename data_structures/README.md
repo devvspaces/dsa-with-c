@@ -77,7 +77,7 @@ A binary search tree is a binary tree in which the value of each left child is l
 - `preorder()` - Traverse the binary search tree in preorder
 - `inorder()` - Traverse the binary search tree in inorder
 - `postorder()` - Traverse the binary search tree in postorder
-- `levelorder()` - Traverse the binary search tree in levelorder
+- `levelorder()` - Traverse the binary tree in levelorder
 
 ## Heap
 
