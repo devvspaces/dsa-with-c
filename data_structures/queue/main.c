@@ -85,6 +85,8 @@ int dequeue(queue_t *queue, int *val)
 	*val = queue->head->val;
 	temp = queue->head;
 	queue->head = queue->head->next;
+	if (temp == queue->tail)
+		queue->tail = NULL;
 	free(temp);
 	return (0);
 }
