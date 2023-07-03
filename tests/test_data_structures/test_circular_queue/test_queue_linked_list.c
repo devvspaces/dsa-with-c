@@ -68,7 +68,7 @@ int test_queue_circular(void)
 	error = test_queue_creation(&qcase);
 	if (error != 0)
 		return (-1);
-	
+
 	error = cEnqueue(qcase, 5);
 	if (error != 0)
 		return (c_free_queue(qcase), -1);

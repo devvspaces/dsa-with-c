@@ -40,7 +40,7 @@ int test_binary_tree_insert(void)
 		return (free_bt(created), -1);
 	if (created != node)
 		return (free_bt(created), -1);
-	
+
 	bt_insert(&node, 5), bt_insert(&node, 6), bt_insert(&node, 7);
 	bt_insert(&node, 8), bt_insert(&node, 9);
 	created = bt_insert(&node, 10);

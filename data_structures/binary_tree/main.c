@@ -30,7 +30,7 @@ bt_node *create_bt_node(int val)
 	node = malloc(sizeof(bt_node));
 	if (node == NULL)
 		return (free(node), NULL);
-	
+
 	node->val = val;
 	node->left = NULL;
 	node->right = NULL;
