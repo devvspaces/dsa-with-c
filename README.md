@@ -17,12 +17,17 @@ Visit [Visualize DSA](https://visualgo.net/en) to visualize the data structures 
   - [x] Doubly Linked List
 - [x] Binary Tree
   - [x] Creating
+  - [x] Inserting
   - [x] Traversing
     - [x] Preorder
     - [x] Inorder
     - [x] Postorder
     - [x] Levelorder
 - [ ] Binary Search Tree
+  - [ ] Creating
+  - [ ] Inserting
+  - [ ] Deleting
+  - [ ] Searching
 - [ ] Heap
 - [ ] Hashing
 - [ ] Graphs
